@@ -4,6 +4,7 @@ const Schema = mongoose.Schema
 const debtSchema = new Schema({
   amount: Number,
   to: String,
+  notes: String,
   payments: [{ type: Schema.Types.ObjectId, ref: 'Payment' }]
 })
 
